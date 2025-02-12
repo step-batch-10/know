@@ -1,0 +1,26 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.no-rules {
+  font-size: 14em;
+  font-weight: 700;
+}
+
+.no {
+  background-color: black;
+  color: white;
+  padding: 0.05em;
+  padding-left: 0.08em;
+  padding-right: 0.08em;
+}
+
+.rules {
+  text-align: right;
+  background-color: crimson;
+  color: white;
+  padding-left: 0.08em;
+  padding-right: 0.08em;
+}
