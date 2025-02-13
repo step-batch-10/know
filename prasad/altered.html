@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      width: 800px;
+      margin: 0 auto;
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #eaeaea;
+    }
+
+    .shape {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2em;
+      font-size: 1.4em;
+      letter-spacing: 0.4em;
+      font-weight: 200;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 100;
+      font-size: 3em;
+      /* padding: 1em; */
+      letter-spacing: 0.2em;
+    }
+
+    .square {
+      height: 200px;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #191923;
+      border-radius: 10px;
+    }
+
+    .rectangle {
+      height: 200px;
+      width: 300px;
+      border-radius: 10px;
+      background-color: #0e79b2;
+    }
+
+    .circle {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      background-color: #bf1363;
+    }
+
+    .oval {
+      height: 200px;
+      width: 150px;
+      border-radius: 50%;
+      background-color: #f39237;
+    }
+    .leaf {
+      height: 200px;
+      width: 200px;
+      border-radius: 100% 0%;
+      background-color: #8cd025;
+      /* color: black; */
+    }
+
+    .shapes {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  </style>
+  <body>
+    <h1>Shapes</h1>
+    <div class="shapes">
+      <div class="shape square">Square</div>
+      <div class="shape rectangle">Rectangle</div>
+      <div class="shape circle">Circle</div>
+      <div class="shape oval">Oval</div>
+      <div class="shape leaf">Leaf</div>
+    </div>
+  </body>
+</html>
