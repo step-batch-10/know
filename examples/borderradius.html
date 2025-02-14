@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Radius Comparison</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+      }
+
+      body {
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1000px;
+      }
+
+      .card {
+        width: 220px;
+        background: white;
+        text-align: center;
+        transition: transform 0.3s ease;
+        overflow: hidden;
+        padding-bottom: 15px;
+      }
+
+      .box {
+        width: 100%;
+        height: 200px;
+      }
+
+      .card h4 {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+
+      .card p {
+        font-size: 14px;
+        color: #555;
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 15px;
+        font-size: 14px;
+        color: white;
+        background-color: #007bff;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+
+      /* Border Radius Variations */
+      .radius-1 {
+        border-radius: 0px;
+      } /* Sharp edges */
+      .radius-2 {
+        border-radius: 5px;
+      }
+      .radius-3 {
+        border-radius: 10px;
+      }
+      .radius-4 {
+        border-radius: 15px;
+      }
+      .radius-5 {
+        border-radius: 20px;
+      }
+      .radius-6 {
+        border-radius: 30px;
+      }
+      .radius-7 {
+        border-radius: 50px;
+      }
+      .radius-8 {
+        border-radius: 100px;
+      }
+      .radius-9 {
+        border-radius: 50%;
+      } /* Fully rounded */
+
+      /* Ensure button matches card's border radius */
+      .btn.radius-1 {
+        border-radius: 0px;
+      }
+      .btn.radius-2 {
+        border-radius: 5px;
+      }
+      .btn.radius-3 {
+        border-radius: 10px;
+      }
+      .btn.radius-4 {
+        border-radius: 15px;
+      }
+      .btn.radius-5 {
+        border-radius: 20px;
+      }
+      .btn.radius-6 {
+        border-radius: 30px;
+      }
+      .btn.radius-7 {
+        border-radius: 50px;
+      }
+      .btn.radius-8 {
+        border-radius: 100px;
+      }
+      .btn.radius-9 {
+        border-radius: 50%;
+      }
+
+      /* Colors for Boxes */
+      .box-1 {
+        background-color: #ffadad;
+      }
+      .box-2 {
+        background-color: #ffd6a5;
+      }
+      .box-3 {
+        background-color: #fdffb6;
+      }
+      .box-4 {
+        background-color: #caffbf;
+      }
+      .box-5 {
+        background-color: #9bf6ff;
+      }
+      .box-6 {
+        background-color: #a0c4ff;
+      }
+      .box-7 {
+        background-color: #bdb2ff;
+      }
+      .box-8 {
+        background-color: #ffc6ff;
+      }
+      .box-9 {
+        background-color: #f7aef8;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Border Radius Comparison: From Sharp to Fully Rounded</h2>
+    <div class="container">
+      <div class="card radius-1">
+        <div class="box box-1"></div>
+        <h4>Sharp Edges</h4>
+        <p>No border radius</p>
+        <button class="btn radius-1">Click Me</button>
+      </div>
+
+      <div class="card radius-2">
+        <div class="box box-2"></div>
+        <h4>Slightly Rounded</h4>
+        <p>5px radius</p>
+        <button class="btn radius-2">Click Me</button>
+      </div>
+
+      <div class="card radius-3">
+        <div class="box box-3"></div>
+        <h4>Light Rounding</h4>
+        <p>10px radius</p>
+        <button class="btn radius-3">Click Me</button>
+      </div>
+
+      <div class="card radius-4">
+        <div class="box box-4"></div>
+        <h4>Moderate Rounding</h4>
+        <p>15px radius</p>
+        <button class="btn radius-4">Click Me</button>
+      </div>
+
+      <div class="card radius-5">
+        <div class="box box-5"></div>
+        <h4>Noticeable Rounding</h4>
+        <p>20px radius</p>
+        <button class="btn radius-5">Click Me</button>
+      </div>
+
+      <div class="card radius-6">
+        <div class="box box-6"></div>
+        <h4>Soft Curves</h4>
+        <p>30px radius</p>
+        <button class="btn radius-6">Click Me</button>
+      </div>
+
+      <div class="card radius-7">
+        <div class="box box-7"></div>
+        <h4>Almost Pill Shape</h4>
+        <p>50px radius</p>
+        <button class="btn radius-7">Click Me</button>
+      </div>
+
+      <div class="card radius-8">
+        <div class="box box-8"></div>
+        <h4>Pill Shape</h4>
+        <p>100px radius</p>
+        <button class="btn radius-8">Click Me</button>
+      </div>
+
+      <div class="card radius-9">
+        <div class="box box-9"></div>
+        <h4>Fully Circular</h4>
+        <p>50% border radius</p>
+        <button class="btn radius-9">Click Me</button>
+      </div>
+    </div>
+  </body>
+</html>
